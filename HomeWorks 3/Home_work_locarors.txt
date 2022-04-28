@@ -1,0 +1,369 @@
+https://v5.webdriver.io/
+1. Для Guide
+====CSS:==========================
+nav ul li[class=""] [href="/docs/gettingstarted.html"]
+nav ul li[class=""] [href*="gettingstarted"]
+li [href="/docs/gettingstarted.html"]
+li [href*="gettingstarted"]
+li a[href*="gettingstarted"]
+li a[href*="gettingstarted"][target]
+a[href*="gettingstarted"][target]
+[href*="gettingstarted"][target='_self']
+[href*="gettingstarted"][target*='_se']
+====xPath:==========================
+/html/body/div[1]/div/header/div/nav/ul/li[1]/a
+//*[text()='Guide']
+//a[text()='Guide']
+//*[text()='Guide' and @href and @target="_self"]
+//a[text()='Guide' and @href and @target="_self"]
+//*[contains(text(),'Guide')]
+//a[contains(text(),'Guide')]
+//*[contains(text(),'Guide')and @target]
+//*[contains(text(),'Guide')and @href]
+//*[contains(text(),'Guide')and @target and @href]
+
+
+2. Для Help
+====CSS:========================== 
+nav ul li[class=""] [href="/help.html"]
+nav ul li[class=""] [href*="help"]
+li [href="/help.html"]
+li [href*="help"]
+li a[href*="help"]
+[href*="help"][target='_self']
+[href*="help"][target*='_se']
+a[href*="help"][target]
+li a[href*="help"][target]
+
+====xPath:==========================
+/html/body/div[1]/div/header/div/nav/ul/li[3]/a
+//*[text()='Help' and @href and @target="_self"]
+//*[contains(text(),'Help')and @target]
+//*[contains(text(),'Help')and @target and @href]
+
+3. Для Blog
+====CSS:==========================
+nav ul li[class=""] [href="/blog/"]
+nav ul li[class=""] [href*="blog"]
+li [href="/blog/"]
+li [href*="blog"]
+li a[href*="blog"]
+li a[href*="blog"][target]
+a[href*="blog"][target]
+[href*="blog"][target='_self']
+[href*="blog"][target*='_se']
+====xPath:==========================
+/html/body/div[1]/div/header/div/nav/ul/li[4]/a
+//*[text()='Blog' and @target]
+//*[text()='Blog' and @target and @href]
+//*[text()='Blog' and @href and @target="_self"]
+//*[contains(text(),'Blog')and @target]
+//*[contains(text(),'Blog')and @href]
+//*[contains(text(),'Blog')and @target and @href]
+
+4. Для Edit
+====CSS:==========================
+[class="edit-page-link button"]
+a[class="edit-page-link button"]
+a[class="edit-page-link button"][target]
+a[class="edit-page-link button"][target][rel]
+a[class="edit-page-link button"][target*="_bl"][rel*=noref]
+a[class="edit-page-link button"][href="https://github.com/webdriverio/webdriverio/edit/master/docs/API.md"]
+a[class="edit-page-link button"][href*='API']
+div [href="https://github.com/webdriverio/webdriverio/edit/master/docs/API.md"]
+div [href*="API"]
+div a[href*="API"]
+div a[href*="API"][target]
+a[href*="API"][target]
+[href*="API"][target='_blank']
+[href*="API"][target*='_bl']
+====xPath:==========================
+/html/body/div[2]/div/div[2]/div/div[1]/header/a
+//*[text()='Edit']
+//a[text()='Edit']
+//*[text()='Edit' and @href and @target="_blank"]
+//a[text()='Edit' and @href and @target="_blank"]
+//*[contains(text(),'Edit')]
+//a[contains(text(),'Edit')]
+//*[contains(text(),'Edit')and @target]
+//*[contains(text(),'Edit')and @href]
+//*[contains(text(),'Edit')and @target and @href]
+
+5. Для Contribute
+====CSS:==========================
+[class="navItem"][href="/docs/api/appium.html"]
+[class="navItem"][href*="appium"]
+li a[href="#contribute"]
+ul[class="toc-headings"] li a[href*='contribute']
+====xPath:==========================
+/html/body/div[2]/div/nav/ul/li[2]/a
+//*[text()='Contribute' and @href]
+//a[text()='Contribute' and @href]
+//a[contains(text(),'Contribute')]
+//*[contains(text(),'Contribute')and @href]
+//a[contains(text(),'Contribute')and @href]
+
+6. Для v4.webdriver.io
+====CSS:==========================
+[href="http://v4.webdriver.io"]
+blockquote [href="http://v4.webdriver.io"]
+blockquote [href*="webdriver"]
+p  [href="http://v4.webdriver.io"]
+p  a[href="http://v4.webdriver.io"]
+[href*="v4.webd"]
+a[href*="v4.webd"]
+
+====xPath:==========================
+/html/body/div[2]/div/div[2]/div/div[1]/article/div/span/blockquote/p/a
+//*[text()='v4.webdriver.io']
+//a[text()='v4.webdriver.io']
+//a[contains(text(),'webdriver')]
+//*[contains(text(),'webdriver')and @href]
+//a[contains(text(),'webdriver')and @href]
+
+7. Для Exemles ph1
+====CSS:==========================
+p:nth-of-type(2) //можно так
+article span p:nth-of-type(2)   //сузим локализацию
+
+====xPath:==========================
+//*[text()="Each command documentation usually comes with an example that demonstrates its usage in WebdriverIO's testrunner (in sync mode)."]
+//p[text()="Each command documentation usually comes with an example that demonstrates its usage in WebdriverIO's testrunner (in sync mode)."]
+//*[contains(text(),'Each command documentation')]
+//p[contains(text(),'Each command documentation')]
+
+
+=================Для Menu==========================
+8. Introduction
+====CSS:==========================
+section div[class="navGroups"] div:nth-of-type(1) h3
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[1]/h3
+/html/body/div[2]/div/div[1]/nav/div/section/div[2]/div[1]/h3
+//h3[text()='Introduction']
+//h3[text()='Introduction' and @class]
+//h3[contains(text(),'Introduction')]
+//*[contains(text(),'Introduction')and @class]
+
+9. API Docs href="/docs/api.html"
+====CSS:==========================
+[class="navItem"][href="/docs/api.html"]
+a[class=navItem][href="/docs/api.html"]
+*[class=navItem][href="/docs/api.html"]
+*[class=navItem][href*="api.html"]
+a[class=navItem][href*="api.html"]
+====xPath:==========================
+/html/body/div[1]/div/header/div/nav/ul/li[1]/a
+//a[text()='API Docs']
+//*[text()='API Docs' and @href]
+//*[text()='API Docs' and @href and @class]
+//a[text()='API Docs' and @href]
+//a[text()='API Docs' and @class]
+//a[contains(text(),'API Docs')]
+//a[contains(text(),'API Docs')and @class]
+//a[contains(text(),'API Docs')and @href]
+//*[contains(text(),'API Docs')and @href]
+//*[contains(text(),'API Docs')and @href and @class]
+//a[contains(text(),'API Docs')and @href and @class]
+
+10. Protocols
+====CSS:==========================
+section div[class="navGroups"] div:nth-of-type(2) h3
+section div[class="navGroups"] div:nth-of-type(2) h3[class="navGroupCategoryTitle"]
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/h3
+/html/body/div[2]/div/div[1]/nav/div/section/div[2]/div[1]/h3
+//*[text()='Protocols']
+//h3[text()='Protocols']
+//*[text()='Protocols' and @class]
+//h3[text()='Protocols' and @class]
+//h3[contains(text(),'Protocols')]
+//*[contains(text(),'Protocols')]
+//*[contains(text(),'Introduction')and @class]
+//h3[contains(text(),'Introduction')and @class]
+
+11. Для Webdriver Protocol
+====CSS:==========================
+[class="navItem"][href="/docs/api/webdriver.html"]
+[class="navItem"][href*="webdriver"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(1) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(1) a[class="navItem"][href="/docs/api/webdriver.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(1) a[class][href]
+a[class*='nav'][href*='webd']
+a[class="navItem"][href="/docs/api/webdriver.html"]
+*[class="navItem"][href="/docs/api/webdriver.html"]
+*[class*='nav'][href*='webd']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[1]/a
+//a[text()='Webdriver Protocol']
+//a[text()='Webdriver Protocol' and @class]
+//a[text()='Webdriver Protocol' and @href]
+//a[text()='Webdriver Protocol' and @class and @href]
+//a[contains(text(),'Webdriver Protocol')]
+//*[contains(text(),'Webdriver Protocol')and @class]
+//*[contains(text(),'Webdriver Protocol')and @href]
+//*[contains(text(),'Webdriver Protocol')and @class and @href]
+//a[contains(text(),'Webdriver Protocol')and @class and @href]
+//a[contains(text(),'Webdriver Protocol')and @class]
+//a[contains(text(),'Webdriver Protocol')and @href]
+//a[contains(text(),'Web')and @class and @href]
+//*[contains(text(),'Web')and @class and @href]
+
+12. Для Appium
+====CSS:==========================
+[class="navItem"][href="/docs/api/appium.html"]
+[class="navItem"][href*="appium"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(2) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(2) a[class="navItem"][href="/docs/api/webdriver.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(2) a[class][href]
+a[class*='nav'][href*='appi']
+a[class="navItem"][href="/docs/api/appium.html"]
+*[class="navItem"][href="/docs/api/appium.html"]
+*[class*='nav'][href*='appium']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[2]/a
+//a[text()='Appium' and @class]
+//a[text()='Appium' and @class and @href]
+//a[contains(text(),'Appium')]
+//*[contains(text(),'Appium')and @class]
+//*[contains(text(),'Appium')and @class and @href]
+//a[contains(text(),'Appium')and @class and @href]
+//a[contains(text(),'Appium')and @class]
+//a[contains(text(),'Appi')and @class and @href]
+//*[contains(text(),'Appi')and @class and @href]
+
+13. Для JSON Wire Protocol
+====CSS:==========================
+[class="navItem"][href="/docs/api/jsonwp.html"]
+[class="navItem"][href*="jsonwp"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(3) a
+.navGroups div:nth-of-type(2) ul li:nth-of-type(3) .navItem[href="/docs/api/jsonwp.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(3) a[class][href]
+li:nth-of-type(3) a[class*='nav'][href*='jsonwp']
+li:nth-of-type(3) *[class*='nav'][href*='jsonwp']
+a[class="navItem"][href="/docs/api/jsonwp.html"]
+*[class="navItem"][href="/docs/api/jsonwp.html"]
+
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[3]/a
+//a[text()='JSON Wire Protocol']
+//a[text()='JSON Wire Protocol' and @class]
+//a[text()='JSON Wire Protocol' and @href]
+//a[text()='JSON Wire Protocol' and @class and @href]
+
+14. Для Mobile JSON Wire Protocol
+====CSS:==========================
+[class="navItem"][href="/docs/api/mjsonwp.html"]
+[class="navItem"][href*="mjsonwp"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(4) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(4) a[class="navItem"][href="/docs/api/mjsonwp.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(4) a[class][href]
+a[class*='nav'][href*='mjsonwp']
+a[class="navItem"][href="/docs/api/mjsonwp.html"]
+*[class="navItem"][href="/docs/api/mjsonwp.html"]
+*[class*='nav'][href*='mjsonwp']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[4]/a
+//a[text()='Mobile JSON Wire Protocol']
+//a[text()='Mobile JSON Wire Protocol' and @class]
+//a[text()='Mobile JSON Wire Protocol' and @href]
+//a[text()='Mobile JSON Wire Protocol' and @class and @href]
+//a[contains(text(),'Mobile JSON Wire Protocol')]
+//*[contains(text(),'Mobile JSON Wire Protocol')and @class]
+//*[contains(text(),'Mobile JSON Wire Protocol')and @href]
+//*[contains(text(),'Mobile JSON Wire Protocol')and @class and @href]
+//a[contains(text(),'Mobile JSON Wire Protocol')and @class and @href]
+//a[contains(text(),'Mobile JSON Wire Protocol')and @class]
+//a[contains(text(),'Mobile JSON Wire Protocol')and @href]
+//a[contains(text(),'Mobile')and @class and @href]
+//*[contains(text(),'Mobile')and @class and @href]
+
+15. Для Chromium
+====CSS:==========================
+[class="navItem"][href="/docs/api/chromium.html"]
+[class="navItem"][href*="chromium"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(5) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(5) a[class="navItem"][href="/docs/api/chromium.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(5) a[class][href]
+a[class*='nav'][href*='chro']
+a[class="navItem"][href="/docs/api/chromium.html"]
+*[class="navItem"][href="/docs/api/chromium.html"]
+*[class*='nav'][href*='chro']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[5]/a
+//a[text()='Chromium']
+//a[text()='Chromium' and @class]
+//a[text()='Chromium' and @href]
+//a[text()='Chromium' and @class and @href]
+//a[contains(text(),'Chromium')]
+//*[contains(text(),'Chromium')and @class]
+//*[contains(text(),'Chromium')and @href]
+//*[contains(text(),'Chromium')and @class and @href]
+//a[contains(text(),'Chromium')and @class and @href]
+//a[contains(text(),'Chromium')and @class]
+//a[contains(text(),'Chromium')and @href]
+//a[contains(text(),'Chro')and @class and @href]
+//*[contains(text(),'Chro')and @class and @href]
+
+16. Для Sauce Labs
+====CSS:==========================
+[class="navItem"][href="/docs/api/saucelabs.html"]
+[class="navItem"][href*="saucelabs"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(6) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(6) a[class="navItem"][href="/docs/api/saucelabs.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(6) a[class][href]
+a[class*='nav'][href*='sauce']
+a[class="navItem"][href="/docs/api/saucelabs.html"]
+*[class="navItem"][href="/docs/api/saucelabs.html"]
+*[class*='nav'][href*='sauce']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[6]/a
+//a[text()='Sauce Labs']
+//a[text()='Sauce Labs' and @class]
+//a[text()='Sauce Labs' and @href]
+//a[text()='Sauce Labs' and @class and @href]
+//a[contains(text(),'Sauce Labs')]
+//*[contains(text(),'Sauce Labs')and @class]
+//*[contains(text(),'Sauce Labs')and @href]
+//*[contains(text(),'Sauce Labs')and @class and @href]
+//a[contains(text(),'Sauce Labs')and @class and @href]
+//a[contains(text(),'Sauce Labs')and @class]
+//a[contains(text(),'Sauce Labs')and @href]
+//a[contains(text(),'Sauce')and @class and @href]
+//*[contains(text(),'Sauce')and @class and @href]
+
+17. Для Selenium Standalone
+====CSS:==========================
+[class="navItem"][href="/docs/api/selenium.html"]
+[class="navItem"][href*="selenium"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(7) a
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(7) a[class="navItem"][href="/docs/api/selenium.html"]
+div[class="navGroups"] div:nth-of-type(2) ul li:nth-of-type(7) a[class][href]
+a[class*='nav'][href*='selen']
+a[class="navItem"][href="/docs/api/selenium.html"]
+*[class="navItem"][href="/docs/api/selenium.html"]
+*[class*='nav'][href*='selen']
+
+====xPath:==========================
+//*[@id="docsNav"]/nav/div/section/div[2]/div[2]/ul/li[7]/a
+//a[text()='Selenium Standalone']
+//a[text()='Selenium Standalone' and @class]
+//a[text()='Selenium Standalone' and @href]
+//a[text()='Selenium Standalone' and @class and @href]
+//a[contains(text(),'Selenium Standalone')]
+//*[contains(text(),'Selenium Standalone')and @class]
+//*[contains(text(),'Selenium Standalone')and @href]
+//*[contains(text(),'Selenium Standalone')and @class and @href]
+//a[contains(text(),'Selenium Standalone')and @class and @href]
+//a[contains(text(),'Selenium Standalone')and @class]
+//a[contains(text(),'Selenium Standalone')and @href]
+//a[contains(text(),'Selen')and @class and @href]
+//*[contains(text(),'Selen')and @class and @href]
